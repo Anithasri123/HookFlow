@@ -1,0 +1,38 @@
+{
+  "name": "hookflow-server",
+  "version": "1.0.0",
+  "description": "HookFlow Backend API - Reliable Webhook Delivery & Event Processing System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "worker": "node workers/webhookWorker.js",
+    "redis": "node scripts/startRedis.js"
+  },
+  "keywords": [
+    "webhook",
+    "express",
+    "mongodb",
+    "jwt",
+    "redis",
+    "bullmq",
+    "worker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.7.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "redis-memory-server": "^0.17.1"
+  }
+}
